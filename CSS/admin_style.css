@@ -1,0 +1,184 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: roboto;
+  font-size: 18px;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.main {
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+/* Buttons chung cho cả trang admin */
+.btn {
+  margin: 0px auto;
+  display: block;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 6px 16px;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-weight: bolder;
+  width: auto;
+  margin-top: 10px;
+}
+
+.btn-delete {
+  background-color: #e85530;
+}
+
+.btn-watch {
+  background-color: rgb(188, 225, 23);
+}
+
+.btn-update {
+  background-color: #3bc24d;
+}
+
+.btn-save {
+  background-color: #c355ee;
+  display: none;
+}
+
+.btn-add {
+  background-color: #efa346;
+}
+
+.btn-cancel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  margin: 0px;
+  border-radius: 0px 8px 0px 8px;
+  padding: 10px;
+  color: white;
+  display: none;
+}
+
+.btn:hover {
+  background-color: rgb(65, 64, 64);
+}
+/* Buttons kết thúc */
+
+/* Table chung của các trang  admin*/
+.admin_table table th {
+  background-color: lightblue;
+  padding: 14px;
+}
+
+.admin_table table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  margin: 0 auto;
+  font-size: 22px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.admin_table table td {
+  padding: 8px 18px;
+}
+
+.admin_table table tr:hover {
+  background-color: lightcyan;
+}
+
+/* Table kết thúc */
+
+/* Sections phần admin_course_edit.php */
+.container-box {
+  background-color: whitesmoke;
+  margin-top: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-box form {
+  border: 1px solid #333333;
+  padding: 1rem;
+  width: 50rem;
+  border-radius: 8px;
+  background-color: white;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.box {
+  /* CSS của thẻ input */
+  height: 40px;
+  width: 100%;
+  border: 1px solid #333333;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  padding-left: 5px;
+}
+
+.container-box form h1 {
+  font-size: 30px;
+}
+
+/* Thông tin khoá học */
+.flex {
+  display: flex;
+}
+
+.container-box form .div1 {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.container-box form .div2 {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.container-box form textarea {
+  height: 210px;
+  width: 100%;
+  outline: none;
+  font-size: 18px;
+}
+
+.container-box form img {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+/* Kết thúc thông tin khoá học */
+
+#video {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* Start section 'Các bài học' */
+.container-box form table {
+  border: none;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 24px;
+}
+
+.container-box form table .display-video {
+  width: 12rem;
+  height: 8rem;
+}
+/* End section 'Các bài học' */

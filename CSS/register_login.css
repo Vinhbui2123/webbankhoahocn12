@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.container-box {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #f6f8fd, #e9ecf5);
+}
+
+.container-box form {
+  background-color: white;
+  padding: 40px;
+  width: 400px;
+  border-radius: 16px;
+  border: none;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container-box form:hover {
+  transform: translateY(-5px);
+}
+
+.container-box form h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.container-box form .box {
+  background-color: #f8f9fa;
+  padding: 12px 16px;
+  margin: 12px 0;
+  width: 100%;
+  border-radius: 8px;
+  border: 2px solid #e9ecef;
+  transition: all 0.3s ease;
+  font-size: 15px;
+}
+
+.container-box form .box:focus {
+  outline: none;
+  border-color: #4a90e2;
+  background-color: #fff;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.container-box form .btn {
+  text-transform: uppercase;
+  margin: 20px 0;
+  padding: 12px 40px;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  color: white;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #4a90e2, #357abd);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.2);
+}
+
+.container-box form .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.3);
+  background: linear-gradient(45deg, #357abd, #4a90e2);
+}
+
+.container-box form p {
+  margin-top: 15px;
+  color: #6c757d;
+}
+
+.container-box form p a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.container-box form p a:hover {
+  color: #357abd;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .container-box form {
+    width: 90%;
+    padding: 30px 20px;
+  }
+}
